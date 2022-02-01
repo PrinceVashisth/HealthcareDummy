@@ -1,0 +1,39 @@
+.sugar__main{
+    margin:3%;
+    background-image:linear-gradient(to right,rgb(216, 25, 25) 0%,rgb(158, 119, 47) 30%,rgb(133, 10, 10) 60% ,rgb(27, 160, 138) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2.5rem;
+}
+
+.sugar__heading,.sugar,.sugar__experts{
+    margin:2%;
+    padding: 10px 15px;
+    color: antiquewhite;
+    font-size: larger;
+    background-image:linear-gradient(to right,rgb(202, 127, 127) 0%,rgb(202, 168, 104) 30%,rgb(245, 77, 77) 60% ,rgb(105, 221, 202) 100%);
+    border-radius: 5px;
+}
+
+.sugar__heading h3,.sugar h2,.sugar__experts h2{
+    background-image: linear-gradient(to right, #5e862a 0%, #3aa162 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+    margin: 10px 0;
+}
+
+@media screen and (max-width:500px){
+    .sugar__main{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .sugar__heading p{
+        margin: 5px 0;
+    }
+
+}

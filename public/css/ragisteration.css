@@ -1,0 +1,13 @@
+.container__form{
+    display: grid;    
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+
+    font-size: 2rem;
+}
+
+.container__form input[type="text"],.container__form input[type="number"],.container__form input[type="password"]{
+     
+    margin: 20px 0;
+} 

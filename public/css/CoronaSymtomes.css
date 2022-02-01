@@ -1,0 +1,90 @@
+.corona__heading{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #3d0a0a;
+    background: linear-gradient(to right, #912943 0%, #448b44 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.Covid__Heading{
+    margin: 20px 10px ;
+    padding: 20px 15px;
+     background-color: #448b44ef;
+    color: aliceblue;
+    font-size:2rem;
+    border-radius: 5px;
+  
+}
+
+.Structure__covid,.Varients__corona{
+    display: flex;
+    margin: 20px 15px;
+    font-size: 1.4rem;
+}
+
+.Symtomes__covid,.symtomes__covid19{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.4rem;
+}
+
+.Structure__covid p,.Symtomes__covid p,.Varients__corona .varient,.symtomes__covid19 .symtomes{
+    margin: 10px 5px;
+    padding: 10px 5px;
+    background-color:#231888ab;
+    border-radius: 5px;
+     /* opacity: 0.85; */
+     color: rgb(255, 255, 255);
+}
+
+.varients{
+    margin: 10px 20px;
+    padding: 5px;
+    border-radius: 5px;
+     /* background-color:#a16dcc; */
+     background-color:#912943;
+    color: aliceblue;
+    font: 1.5em sans-serif;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.symtomes h2,.Varients__corona .varient h3{
+    margin: 10px 0;
+    color: #b91919;
+    text-align: center;
+}
+
+.subheadings{
+    text-align: center;
+    background-color: #3d0a0a;
+    background: linear-gradient(to right, #912943 0%, #448b44 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2rem;
+}
+
+@media screen and (max-width:600px) {
+    .Covid__Heading{
+        font-size: larger;
+    }
+    .Symtomes__covid,.symtomes__covid19{
+        grid-template-columns: 1fr; 
+    }
+    .Structure__covid,.Varients__corona{
+        flex-wrap: wrap;
+    }
+
+    .subheadings{
+        font-size: 1.2rem;
+    }
+}
+

@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../logos/health__care_bg__img.jpeg');
+    background-repeat:repeat-y;
+    background-size:100vw 100vh ;
+    /* color: #000; */
+    opacity: 1;
+}
+
+.container{
+    display: flex;
+    height: 100px;
+    justify-content:space-between;
+    align-items: center;
+    position:sticky;
+    /* background: rgba(129, 231, 61, 0.582); */
+    background: rgba(96, 228, 8, 0.733);
+    z-index: 666;
+    top: 0;
+}
+
+.SiteLogo{
+    margin-left: 10px;
+    opacity: 0.5;
+}
+.SiteLogo a{
+    text-decoration: none;
+    font-size:2.5rem;
+    border-radius: 3px;
+}
+
+.main__link{
+    display: flex;
+    position: relative;
+    margin-right: 50px;
+}
+
+.main__link li{
+    list-style-type: none;
+    margin: 0 15px 0 15px;
+    font-size: 1.3rem;
+}
+
+.items a{
+    text-decoration: none;
+    color: brown;
+    opacity: 0.7;
+}
+.items a:hover{
+   transition: all 0.3s ease-in-out;
+   color: rgb(0, 81, 255);
+}
+
+@media screen and (max-width:1130px){
+    .container{
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px; 
+    }
+
+    .home__links{
+        margin: 0;
+        width: 100%;
+        position:absolute;
+        top: 90px;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        z-index:999;
+      background: rgba(129, 231, 61, 0.582);
+        margin: 10px 0;
+        
+    }
+ 
+    .main__link{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+ 
+    .home__links.active {
+        background: #000;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.3s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+ 
+    .main__link a{
+       color: #fff;
+       font-size: 1.5rem;
+       text-align: center;
+    }
+    .items{
+        padding: 10px 0;
+        text-align: center;
+    }
+
+.toggle__menu .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+    background: rgba(24, 24, 23, 0.425);
+}
+   #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+}
+.toggle__menu .bar {
+    display: block;
+    cursor: pointer;
+}
+    
+}

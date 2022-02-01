@@ -1,0 +1,151 @@
+/* second section */
+.images {
+    display: flex;
+    margin: 2%;
+    padding: 1.2%;
+    border: brown solid;
+    background-color: darkcyan;
+}
+
+.container__one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top:50px;
+    padding: 0 30px;
+}
+
+.writting{
+    text-align: center;
+}
+
+.writting h2,.writting h3,.writting p{
+    margin: 25px 0;
+    padding: 0 10px;
+    padding-right: 10px;
+    font-weight: 900;
+    position: relative;
+    top: 40px;
+}
+
+.writting h2{
+    font-size: 2.5rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.writting h3{
+    font-size: 3rem;
+    background-color: #3d0a0a;
+    background-image: linear-gradient(to top, #611427 0%, #094b09 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.writting p{
+    background-color: #220e6b;
+    background-image: linear-gradient(to right, #4ad5da 0%, #0d7d91 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.photo{
+    width: 40rem;
+    height: 40rem;
+    opacity: 0.85;
+}
+
+@media screen and (max-width:860px){
+    .container__one{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:600px){
+    .photo{
+        width: 100%;
+        height: 65%;
+        opacity: 0.85;
+    }
+}
+
+
+/* senond links sections */
+.links__wrapper{
+    margin: 30px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card{
+    display: flex;
+    margin:20px 40px;
+    padding: 10px 0;
+    flex-direction: column;
+    justify-content:space-around;
+    background-image: linear-gradient(to right,#fff 0%,rgb(80, 22, 22) 50%, #0f0f0f);
+    opacity: 0.85;
+    transition: all 0.3 ease;
+}
+
+.card:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.logo__image{
+    display: flex;
+    background:#fff;
+    justify-content: center;
+    margin: auto;
+}
+
+.card a{
+    text-decoration: none;
+    font-size:2rem;
+    font-style: italic;
+    text-align: center;
+    color: #f70707;
+    font-weight: 800;
+}
+
+.card a:hover{
+    transition: all 0.3s ease-in-out;
+    font-size: 2.45rem;
+    color: #59ec34;
+}
+
+@media screen and (max-width:1450px){
+    .links__wrapper{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media screen and (max-width:800px){
+    .links__wrapper{
+        grid-template-columns:1fr;
+    }
+    .card{
+        margin:20px 5px;
+        justify-content:center;
+    }
+}
+
+/* mobile grid */
+@media screen and (max-width:400px){
+    .logo__image{
+        width:175px;
+        height: 300px;
+    }
+}

@@ -1,0 +1,169 @@
+    <style>
+        * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url('../logos/health__care_bg__img.jpeg');
+        background-repeat:repeat-y;
+        background-size:100vw 100vh ;
+        opacity: 1;
+    }
+    
+    .container{
+        display: flex;
+        height: 100px;
+        justify-content:space-between;
+        align-items: center;
+        position:sticky;
+        background: rgba(96, 228, 8, 0.733);
+        z-index: 666;
+        top: 0;
+    }
+    
+    .SiteLogo{
+        margin-left: 10px;
+        opacity: 0.5;
+    }
+    .SiteLogo a{
+        text-decoration: none;
+        font-size:2.5rem;
+        border-radius: 3px;
+    }
+    
+    .main__link{
+        display: flex;
+        position: relative;
+        margin-right: 50px;
+    }
+    
+    .main__link li{
+        list-style-type: none;
+        margin: 0 15px 0 15px;
+        font-size: 1.3rem;
+    }
+    
+    .items a{
+        text-decoration: none;
+        color: brown;
+        opacity: 0.7;
+    }
+    .items a:hover{
+       transition: all 0.3s ease-in-out;
+       color: rgb(0, 81, 255);
+    }
+    
+    @media screen and (max-width:1130px){
+        .container{
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            z-index: 1;
+            width: 100%;
+            max-width: 1300px; 
+        }
+    
+        .home__links{
+            margin: 0;
+            width: 100%;
+            position:absolute;
+            top: -1000px;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+            z-index:999;
+          background: rgba(129, 231, 61, 0.938);
+            margin: 10px 0;
+            
+        }
+     
+        .main__link{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            width: 100%;
+        }
+     
+        .home__links.active {
+            top: 90%;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+            z-index: 99;
+        
+        }
+     
+        .main__link a{
+           color: #fff;
+           font-size: 1.8rem;
+           text-align: center;
+        }
+        .items{
+            padding: 10px 0;
+            text-align: center;
+        }
+    
+    .toggle__menu{
+        margin: 0 20px;
+    }
+    .toggle__menu #bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+        background: rgba(24, 24, 23, 0.938);
+    }
+       #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .toggle__menu #bar {
+        display: block;
+        cursor: pointer;
+    }
+    
+   .toggle__menu.is-active #bar:nth-child(2){
+       opacity: 0;
+   }
+   .toggle__menu.is-active #bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+   }
+   .toggle__menu.is-active #bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+   }
+   
+    
+}   
+    </style>
+    <nav class="container">
+         <div class="SiteLogo">
+                 <a href="/" class="brand">Health Care</a>
+             </div>
+             <div class="toggle__menu" id="mobile__menu">
+                 <span id="bar"></span>
+                 <span id="bar"></span>
+                 <span id="bar"></span>
+             </div>
+             <div class="home__links">
+                 <ul class="main__link">
+                     <li class="items"><a href="/">Home</a></li>
+                     <li class="items"><a href="/about">About Us</a></li>
+                     <li class="items"><a href="/healthcaretips">Healthcare Tips</a></li>
+                     <li class="items"><a href="/covidapi">Covid Updates</a></li>
+                     <li class="items"><a href="/ragisteration" id="align_it">Ragisteration</a></li>
+                 </ul>
+         </div>
+    </nav>   
+   <script>
+       const links = document.querySelector('.home__links');
+       const toggle = document.querySelector('.toggle__menu');
+      
+     const toggleing = ()=>{
+        links.classList.toggle('active');
+        toggle.classList.toggle('is-active');
+     }
+
+   toggle.addEventListener('click',toggleing);
+
+</script>

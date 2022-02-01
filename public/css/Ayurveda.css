@@ -1,0 +1,25 @@
+
+
+ .container__Ayurveda{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    height: 100vh;
+   margin-top: 30px;
+   text-align: center;
+   
+} 
+
+.first__grid{
+    width: 20vw;
+    background: rgb(197, 45, 45);
+    
+}
+.Second__grid{
+    width: 55vw;
+    background: rgb(133, 219, 121);
+}
+.third__grid{
+    width: 20vw;
+    background: rgb(115, 164, 228);
+}

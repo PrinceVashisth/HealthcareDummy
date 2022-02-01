@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.flickity{  
+    margin: 20px 0; 
+    width: 95vw;
+}
+/* carosol starts */
+.carousel {
+    background: rgba(97, 221, 205, 0.301);
+  }
+
+.carousel-cell img{
+    width: 80vw;
+    height: 400px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+
+.side{
+    width: 30rem;
+    border: 5px solid rgb(230, 176, 76);
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgb(224, 197, 161);
+    padding: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    text-align: center;
+}
+.cards{
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    display: block;
+    font-weight: 800;
+    font-family: 'Libre Baskerville', serif;
+    text-decoration: underline;
+    color: brown;
+    margin: 5px;
+    text-align: center;
+}
+.card{
+    border: 5px solid rgb(248, 74, 248);
+    background-color: rgb(221, 169, 243);
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px){
+    .box{
+        justify-content: center;
+    }
+    .cards{
+        width: 80%;
+        justify-content:center;
+    }
+}

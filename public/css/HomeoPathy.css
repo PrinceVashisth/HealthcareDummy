@@ -1,0 +1,41 @@
+.heading__homeo h3{
+    font-size: 2.5rem;
+    margin: 10px 30px;
+    background:linear-gradient(to right,rgb(212, 159, 159) 0%,rgb(114, 52, 52) 50%,rgb(190, 156, 127) 100%);
+    color: rgba(137, 216, 216, 0.705);
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.heading__homeo p{
+    margin: 10px 20px;
+    font-size: larger;
+    padding: 20px 10px;
+    background: rgb(226, 137, 137);
+    color: rgb(245, 250, 250);
+    border-radius: 5px;
+    opacity: 0.85;
+}
+
+.heading__homeo p:hover{
+    transform: scale(1.025);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.247) 2px 3px;
+}
+
+.history{
+    background: rgba(201, 85, 85, 0.445);
+    margin: 20px 10%;
+    padding: 20px 10px;
+    font-size:xx-large;
+    color: aliceblue;
+}
+.history h3{
+    padding-bottom: 10px;
+    color: blueviolet;
+}
+
+@media screen and (max-width: 500px){
+    
+}

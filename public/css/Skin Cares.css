@@ -1,0 +1,204 @@
+/* other section */
+.heading__skinCares{
+    margin: 30px 0;
+    text-align: center;
+    color: blue;
+   font-size: 1.5rem;
+}
+
+.Heading__innerContent{
+    margin: 10px 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 30px;
+    border: #fff 4px solid;
+    background: #000;
+    color: rgb(255, 255, 255);
+}
+
+.main__heading{
+    margin: 10px 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 30px;
+    border: #fff 4px solid;
+    background: #000;
+    color: #fff;
+}
+
+@media screen and (max-width:550px) {
+    .Heading__innerContent{
+        margin: 10px;
+        font-size: 1rem;
+        text-align:initial;
+        padding: 10px;
+    }
+    .main__heading{
+        margin: 10px;
+        font-size: 1rem;
+        text-align:initial;
+        padding: 10px;
+    }
+}
+
+.topics__skinCares{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     background: rgba(97, 221, 205, 0.301);
+     margin: 40px 20px;
+     color: #fff;
+     padding: 20px 10px;
+     font-weight: 700;
+}
+
+.topics__scare{
+
+    width: 40vw;
+}
+
+.flickity{   
+    width: 60vw;
+}
+
+/* carosol starts */
+
+.carousel {
+    background: rgba(97, 221, 205, 0.301);
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+/* Carosol ends */
+
+.carousel-cell img{
+    width: 55vw;
+    height: 380px;
+}
+
+@media screen and (max-width:800px){
+    .topics__skinCares{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .flickity{
+        margin-top: 30px;
+        width: 80vw;
+    }
+    .topics__scare{
+        width: 100%;
+    }
+    .carousel-cell img{
+        width: 75vw;
+    }
+}
+
+@media  screen and (max-width:330px) {
+    .carousel-cell img{
+        width: 70vw;
+        height: 240px;
+    }
+}
+
+.all_skin_type{
+    text-align: center;
+    margin: 10px 10%;
+    background: rgba(172, 221, 56, 0.893);
+}
+
+.all_skin_type ul{
+    list-style-type: none;
+    color: #fff;
+    font-size: larger;
+    padding: 10px 0;
+}
+
+.second__flickey{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(97, 221, 205, 0.301);
+    margin: 10px;
+    padding: 20px 10px;
+}
+
+.Avoid_Hacks{
+    margin: 20px;
+    padding: 20px 10px;
+    color: #fff;
+    max-width: 35vw;
+}
+.Avoid_Hacks ul{
+    list-style-type: none;
+}
+
+
+@media screen and (max-width:800px){
+    .second__flickey{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .flickity{
+        width: 80vw;
+    }
+    .Avoid_Hacks{
+        min-width: 90vw;
+    }
+}
+
+/* diseases grid layout */
+
+.problems{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    text-align: center;
+    margin: 30px 0px;
+    color:#fff;
+}
+
+.Diseases__card{
+    background: rgb(224, 145, 145);
+    background:linear-gradient(to right,rgb(233, 20, 20) 0%,rgb(238, 170, 125) 40%,rgb(203, 241, 114) 80%,rgb(53, 248, 157) 100%);
+    /* padding: 5px; */
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.Diseases__card:hover{
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.Diseases__card img{
+    width: 25vw;
+    height: 300px;
+    margin:20px 0 10px 0 ;
+}
+
+@media screen and (max-width:800px){
+    .problems{
+        grid-template-columns:1fr 1fr ;
+        justify-content: space-around;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:500px){
+    .problems{
+        grid-template-columns:1fr;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .Diseases__card img{
+        width: 80vw;
+        height: 300px;
+        margin:20px 0 10px 0 ;
+    }
+}

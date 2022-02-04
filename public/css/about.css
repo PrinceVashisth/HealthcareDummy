@@ -1,0 +1,197 @@
+.intro__container,.achievements{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-image: linear-gradient(to right, #b61560 0%,rgb(209, 28, 28) 20%,rgb(221, 49, 49) 60%, #55c9dd 100%);
+}
+
+.introduction{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.introduction h1,.introduction h2,.introduction h4,.contact_us h3{
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, #a0364b 0%,rgb(156, 150, 146) 20%,rgb(95, 146, 13) 60%, #0c65b8 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.introduction ul{
+    list-style-type: none;
+    margin: 5px;
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.photo{
+    height: 40rem;
+    width: 30rem;
+}
+
+.certificates ul{
+    font-size:2rem;
+    list-style-type: none;
+    color: #fff;
+    text-align: center;
+}
+.certificates h2{
+    margin-top: 40px;
+    font-size: 3rem;
+    text-align: center;
+    background-image: linear-gradient(to right, #a7495c 0%,rgb(120, 194, 36) 20%,rgb(40, 233, 22) 60%, #510df0 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.certificates ul li{
+    margin: 15px 0;
+}
+
+.contact_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #b61560 0%,rgb(209, 28, 28) 20%,rgb(221, 49, 49) 60%, #55c9dd 100%);
+    font-size: 3rem;
+}
+
+
+.flickity{   
+    width: 45vw;
+    background-image: linear-gradient(to right, #b61560 0%,rgb(209, 28, 28) 20%,rgb(221, 49, 49) 60%, #55c9dd 100%);
+}
+
+/* carosol starts */
+
+.carousel {
+    background: rgba(97, 221, 205, 0.301);
+  }
+.carousel-cell img{
+    width: 40vw;
+    height: 380px;
+}
+
+.site__logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100vw;
+   min-width:90vw;
+}
+
+.site__logos a img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.user__views{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #e154e6;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+   max-width :100vw;
+   margin: 10px 5px;
+   padding: 10px 5px;
+   background: rgb(214, 131, 131);
+   border-radius: 5px;
+}
+
+form input[type="text"]{
+    height: 40px;
+    width: 60vw;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+form button{
+       padding: 5px;
+       background: #000;
+       color: #fff;
+       font-size: 1.2rem;
+       border-radius: 10px;  
+}
+form button:hover{
+    transition: all 0.5s ease-in-out;
+    color: #a0364b;
+}
+
+@media screen and (max-width:1000px){
+    .intro__container{
+        flex-direction: column-reverse;
+    }
+    .achievements{
+        flex-direction: column;
+    }
+    .photo{
+        height:50vmax;
+        width: 80vw;
+    }
+    .introduction,.contact_us{
+        padding: 20px 0;
+        font-size: 1.5rem;
+    }
+    .certificates ul,.introduction ul{
+        font-size: 1.5rem; 
+    }
+
+    .site__logos a img{
+       
+        height: 100px;
+        width:  100px;
+    }
+
+    .flickity{   
+        width: 100vw;
+    }
+    
+    /* carosol starts */
+    .carousel-cell img{
+        width: 95vw;
+        height: 380px;
+    }
+    
+}
+
+@media screen and (max-width:460px){
+    .introduction{
+        font-size: 1rem;
+    }
+    .certificates ul,.introduction ul{
+        font-size: 1.3rem; 
+    }
+   
+    .certificates h2{
+        font-size: 2rem;
+    }
+    .contact_us{
+        font-size: 1.5rem;
+    }
+    .site__logos a img{
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+    }
+    form{
+        flex-direction: column;
+    }
+    form input[type="text"]{    
+        width: 90vw;
+        margin-right:0px;
+        margin-bottom: 10px;
+    }
+}

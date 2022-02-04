@@ -21,4 +21,4 @@ let Lines = [
             ];
             setInterval(() => {
                 Heading.textContent = Lines[Math.floor(Math.random()*18)];                
-            }, 5000);
+            }, 3000);

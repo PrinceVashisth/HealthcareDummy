@@ -1,0 +1,28 @@
+.covid__table{
+    margin:25px auto;
+    min-width: 90vw; 
+    max-width: 95vw;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+table{
+    overflow-x: hidden;
+}
+
+th{
+    margin: 10px 5px;
+}
+
+tr{
+    background-color:aqua;
+    padding: 10px;
+}
+
+td{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    background: #000;
+    color: aliceblue;
+}

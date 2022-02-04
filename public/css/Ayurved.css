@@ -1,0 +1,95 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    justify-content: center;
+}
+.images{
+    justify-content: center;
+    align-items: center;
+    /* height: 250px; */
+    display: flex;
+    background-color: rgb(184, 230, 138);
+}
+.heading{
+    color: brown;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.image{
+    margin: 5px;
+    height: 200px;
+}
+
+.text{
+    background: cornsilk;
+    background: linear-gradient(45deg,rgb(247, 161, 161),rgb(133, 133, 247),rgb(150, 241, 150));
+    padding: 10px 15px;
+    margin: 20px;
+    border-radius: 20px;
+    color: rgb(3, 49, 3);
+    font-family: 'Quintessential', cursive;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.notes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.note{
+    background: linear-gradient(20deg,rgb(247, 161, 161),rgb(133, 133, 247),rgb(150, 241, 150));
+    margin: 20px;
+    padding: 10px 5px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Quintessential', cursive;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+.flickity{  
+    margin: 20px 0; 
+    width: 95vw;
+}
+/* carosol starts */
+.carousel {
+    background: rgba(97, 221, 205, 0.301);
+  }
+
+.carousel-cell img{
+    width: 80vw;
+    height: 400px;
+}
+
+@media screen and (max-width:900px){
+    .text{
+        font-size: 1.1rem;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .notes{
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media screen and (max-width:450px){
+    .notes{
+        grid-template-columns: 1fr; 
+    }
+    .note,.text{
+        margin: 5px;
+    }
+}

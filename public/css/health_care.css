@@ -1,14 +1,11 @@
 
-/* middle part */
-/* 
-.heading__tips{
-} */
 
 .heading__tips h2{
     margin-top: 20px;
     text-align: center;
-    font-family: cursive;
     font-weight: 500;
     transition:all 1s ease; 
-    color:gray; 
+    color:rgb(87, 73, 212); 
+    font-size: 3rem;
+
 }

@@ -1,15 +1,23 @@
+const dotenv = require('dotenv');
 const express = require('express');
+const mongoose = require('mongoose');
 const hbs = require("hbs");
 const path = require('path');
 const port = process.env.PORT || 3000;
 const app = express();
-const templatePath = path.join(__dirname,"../templates/views");
-const PartialsPath = path.join(__dirname,"../templates/partials");
 
+dotenv.config({ path:"./config.env" });
 //accouring data base to main app.js  
 require("./database/db");
-const Healthcare = require('./database/model');
-const { Mongoose } = require('mongoose');
+const User = require('./database/model');
+
+// viewers data database
+require("./database_viewer/db");
+const Viewer = require("./database_viewer/model"); 
+
+// paths of files
+const templatePath = path.join(__dirname,"../templates/views");
+const PartialsPath = path.join(__dirname,"../templates/partials");
 
 //middlewares
 app.use(express.static('public'));
@@ -78,8 +86,8 @@ app.get("/ragisteration", (req, res) => {
 app.get("/login", (req, res) => {
     res.render("login");
 });
-app.get('/Ayurveda',(req,res)=>{
-    res.render("Ayurveda");
+app.get("/Ayurved",(req,res)=>{
+    res.render("Ayurved");
 });
 app.get('/CoronaSymtomes',(req,res)=>{
    res.render("CoronaSymtomes");
@@ -113,13 +121,7 @@ app.get('/Homeopathy',(req,res)=>{
 
 app.post("/ragisteration", async (req,res)=>{
     try {
-       const host = new Healthcare({
-           Firstname : req.body.Firstname,
-           Lastname : req.body.Lastname,
-           Age : req.body.Age,
-           Password : req.body.Password,
-           CPassword : req.body.CPassword
-       })
+       const host = new User(req.body);
         const item = await host.save();
         res.render('index');
         console.log(item);
@@ -127,6 +129,18 @@ app.post("/ragisteration", async (req,res)=>{
       console.log(error);  
     }
 })
+
+
+app.post("/about",async (req,res)=>{
+   try{
+    const viewer = new Viewer(req.body);
+    const items = await viewer.save();
+    res.render('index');
+    console.log(items);
+   }catch(error){
+    console.log(error);
+   }
+});
 
 app.listen(port, () => {
     console.log(`listening port at port ${port}`);

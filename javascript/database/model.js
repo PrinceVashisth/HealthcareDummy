@@ -24,9 +24,9 @@ const Schema = new mongoose.Schema({
    }
 })
 
-const Healthcare = new mongoose.model("Healthcare",Schema);
-console.log('Schema connected');
-module.exports=Healthcare;
+const User = new mongoose.model("USER",Schema);
+// console.log('Schema connected');
+module.exports=User;
 
 
 // const mongoose = require("mongoose");

@@ -7,12 +7,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link rel="stylesheet" href="css/about.css">
+       <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
    {{>header}}
-     <div class="about__container">
+     <div class="intro__container">
+  
+      <div class="introduction">
          <h1>My Name is Prince Vashisth</h1>
-         
+          <h2>WEB DEVELOPER</h2>
+         <ul>
+             <li>WRITTING SONGS</li>
+             <li>PLAYING GUITAR</li>
+             <li>LISTENING SONGS</li>
+             <li>WANNA BECOME FAMOUS</li>
+         </ul> 
+         <h4>Wants to open my Own startup for web designing</h4>
+      </div>
+       <div class="flickity">
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
+  <div class="carousel-cell"> <img src="my images/img_one.jpeg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="my images/img_two.jpeg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="my images/img_three.jpeg" alt="" srcset=""></div>
+  <div class="carousel-cell"> <img src="my images/img_four.jpeg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="my images/img_five.jpeg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="my images/img_six.jpeg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="my images/img_seven.jpg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="my images/img_eight.jpg" alt="" srcset=""> </div> 
+    </div>
+</div>
+        {{!-- <img src="images/daily routine.jpg" alt="" srcset="" class="photo"> --}}
      </div>
+
+     <div class="achievements">
+         {{!-- <img src="images2/deep breathing.jpeg" alt="" srcset="" class="photo"> --}}
+    <div class="flickity">
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
+  <div class="carousel-cell"> <img src="certificates/newspaper.jpeg" > </div>
+  <div class="carousel-cell"> <img src="certificates/c++.jpg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="certificates/Hackerrank.jpg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="certificates/microsoft.jpg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="certificates/deep learning.jpg" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="certificates/human values.png" alt="" srcset=""> </div>
+  <div class="carousel-cell"> <img src="certificates/ecosystem quiz.jpg" alt="" srcset=""> </div>
+    </div>
+</div>
+
+       <div class="certificates">
+           <h2> Certificates And Achievements </h2>
+           <ul>
+               <li>RISING STAR IN 12th</li>
+               <li>C AND C++ CERTIFICATE</li>
+               <li>FIVE STAR AT HACKERRANK</li>
+               <li>MICROSOFT AI 4 STUDENT CERTIFICATE</li>
+               <li>AI INDUSTIAL CERTIFICATE</li>
+               <li>HUMAN VALUES AND UNIVERSAL ETHICS</li>
+               <li>SOCIAL KNOWLEDGE CERTIFICATE</li>
+           </ul>
+       </div>
+     </div>
+
+     <div class="contact_us">
+         <h3>You Can Contact Us </h3>  
+         
+        <div class="site__logos">
+            <a href="https://www.facebook.com/profile.php?id=100008845088274"><img src="logos/logo-Meta.png" alt="" srcset=""></a>
+            <a href="https://www.linkedin.com/in/prince-vashisth-832689213"><img src="logos/linkedin-logo.png" alt="" srcset=""></a>
+            <a href="https://www.instagram.com/invites/contact/?i=cjbi1x0drlgj&utm_content=mz8sfsf"><img src="logos/Instagram_logo.png" alt="" srcset=""></a>
+            <a href="https://twitter.com/Prince69744418?t=mS5SKwo2dmxseCvO78YtIA&s=08"><img src="logos/twitter-logo.png" alt="" srcset=""></a>
+        </div> 
+        <div class="user__views">
+          <p>views of users regarding this site</p> 
+            <form action="/about" method="post">
+            <input type="text" name="view" id="" placeholder="Leave a comment">
+            <button type="submit" value="about">submit</button>
+            </form>
+        </div>
+
+     </div>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

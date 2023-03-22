@@ -124,7 +124,6 @@ app.post("/ragisteration", async (req,res)=>{
        const host = new User(req.body);
         const item = await host.save();
         res.render('index');
-        console.log(item);
     } catch (error) {
       console.log(error);  
     }
@@ -136,7 +135,6 @@ app.post("/about",async (req,res)=>{
     const viewer = new Viewer(req.body);
     const items = await viewer.save();
     res.render('index');
-    console.log(items);
    }catch(error){
     console.log(error);
    }

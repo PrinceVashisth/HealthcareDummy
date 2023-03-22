@@ -8,5 +8,4 @@ const Schema = new mongoose.Schema({
 })
 
 const View = new mongoose.model("VIEW",Schema);
-console.log('Schema connected views');
 module.exports=View;

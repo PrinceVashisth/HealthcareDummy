@@ -2,8 +2,7 @@ const mongoose = require('mongoose');
 
 DB =process.env.DATABASE;
 mongoose.connect(DB)
-.then((result) => {
- console.log('connection sucessfull viewer');   
+.then((result) => { 
 }).catch((err) => {
     console.log(err);
 });

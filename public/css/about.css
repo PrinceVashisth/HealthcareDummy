@@ -117,6 +117,7 @@ form input[type="text"]{
     margin-right: 15px;
     border-radius: 5px;
     font-size: 30px;
+    padding-left: 20px;
 }
 form button{
        padding: 5px;
